@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+    <string name="category_restaurants">Restaurants</string>
+    <string name="category_museums">Museums</string>
+    <string name="category_cinemas">Cinemas</string>
+    <string name="category_hospitals">Hospitals</string>
+</resources>
