@@ -16,13 +16,22 @@ public class MainActivity extends AppCompatActivity {
     public void openCategory(View view) {
         switch(view.getId()) {
             case R.id.tv_cat_restaurants:
-                Intent openRest = new Intent(MainActivity.this, RestaurantsActivity.class);
-                startActivity(openRest);
+                startActivity(RestaurantsActivity.class);
+                break;
             case R.id.tv_cat_museums:
+                startActivity(MuseumsActivity.class);
+                break;
             case R.id.tv_cat_cinemas:
+                startActivity(CinemasActivity.class);
+                break;
             case R.id.tv_cat_hospitals:
-            default:
+                startActivity(HospitalActivity.class);
                 break;
         }
+    }
+
+    private void startActivity(Class<?> cls) {
+        Intent openRest = new Intent(MainActivity.this, cls);
+        startActivity(openRest);
     }
 }

@@ -11,12 +11,14 @@
         android:layout_weight="1">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:textAlignment="center"
+            android:textSize="@dimen/category_activity_name"
             android:text="@string/category_restaurants"
             android:id="@+id/tv_cat_restaurants"
-            android:onClick="openCategory"/>
+            android:onClick="openCategory"
+            android:background="@color/colorPrimary"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,11 +26,14 @@
         android:layout_weight="1">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:textAlignment="center"
+            android:textSize="@dimen/category_activity_name"
             android:text="@string/category_museums"
-            android:id="@+id/tv_cat_museums"/>
+            android:id="@+id/tv_cat_museums"
+            android:onClick="openCategory"
+            android:background="@color/colorAccent"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,11 +41,14 @@
         android:layout_weight="1">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:textAlignment="center"
+            android:textSize="@dimen/category_activity_name"
             android:text="@string/category_cinemas"
-            android:id="@+id/tv_cat_cinemas"/>
+            android:id="@+id/tv_cat_cinemas"
+            android:onClick="openCategory"
+            android:background="@color/colorPrimary"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -48,10 +56,13 @@
         android:layout_weight="1">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:textAlignment="center"
+            android:textSize="@dimen/category_activity_name"
             android:text="@string/category_hospitals"
-            android:id="@+id/tv_cat_hospitals"/>
+            android:id="@+id/tv_cat_hospitals"
+            android:onClick="openCategory"
+            android:background="@color/colorAccent"/>
     </RelativeLayout>
 </LinearLayout>
