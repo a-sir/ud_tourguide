@@ -4,12 +4,12 @@ import org.jetbrains.annotations.NotNull;
 
 public class Place {
 
-    private final @NotNull String name;
-    private final @NotNull String description;
-    private final @NotNull String workingHours;
-    private final @NotNull String address;
-    private final @NotNull String website;
-    private final @NotNull String phone;
+    public final @NotNull String name;
+    public final @NotNull String description;
+    public final @NotNull String workingHours;
+    public final @NotNull String address;
+    public final @NotNull String website;
+    public final @NotNull String phone;
 
     public Place(
             @NotNull String name,
