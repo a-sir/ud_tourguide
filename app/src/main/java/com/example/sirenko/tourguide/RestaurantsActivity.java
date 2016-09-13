@@ -15,7 +15,7 @@ public class RestaurantsActivity extends AppCompatActivity {
         setContentView(R.layout.place_list);
 
         List<Place> places = new ArrayList<>();
-        places.add(new Place("name", "description", "hours", "address", "www", "phone"));
+        places.add(Place.restaurant("name", "description", "hours", 25, "address", "www", "phone"));
         PlaceAdapter adapter = new PlaceAdapter(this, places);
         ListView layout = (ListView) findViewById(R.id.places_list_id);
         assert layout != null;

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -23,11 +24,26 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         }
         Place place = getItem(position);
 
-        ((TextView) itemView.findViewById(R.id.name)).setText(place.name);
+        ((TextView) itemView.findViewById(R.id.tv_place_name)).setText(place.name);
+        ((TextView) itemView.findViewById(R.id.tv_place_description)).setText(place.description);
+        ((TextView) itemView.findViewById(R.id.tv_place_working_hours)).setText(place.workingHours);
+        if (place.averageBillDollars != -1) {
+            ((TextView) itemView.findViewById(R.id.tv_place_average_bill_dollars)).setText(String.valueOf(place.averageBillDollars));
+        }
+        ((TextView) itemView.findViewById(R.id.tv_place_address)).setText(place.address);
+        ((TextView) itemView.findViewById(R.id.tv_place_website)).setText(place.website);
+        ((TextView) itemView.findViewById(R.id.tv_place_phone)).setText(place.phone);
+        if (place.emergencyPhone != null) {
+            ((TextView) itemView.findViewById(R.id.tv_place_emergency_phone)).setText(place.emergencyPhone);
+        }
 
-        ((TextView) itemView.findViewById(R.id.description)).setText(place.description);
-
-        itemView.findViewById(R.id.place_image).setVisibility(View.GONE);
+        ImageView image = (ImageView) itemView.findViewById(R.id.iv_place_image);
+        if (place.imageResourceId == -1) {
+            image.setVisibility(View.GONE);
+        } else {
+            image.setImageResource(place.imageResourceId);
+            image.setVisibility(View.VISIBLE);
+        }
         return itemView;
     }
 }
