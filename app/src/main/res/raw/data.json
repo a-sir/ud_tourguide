@@ -1,0 +1,15 @@
+{
+  "restaurants": [],
+  "museums": [
+    {
+      "name": "Ethnographic museum",
+      "description": "Old pictures and houses",
+      "workingHours": "Every day 9-22",
+      "address": "Hanoi, Giang Vo, 161",
+      "website": "www.singapore-food-hanoi.com.vn",
+      "phone": "+848762378675"
+    }
+  ],
+  "cinemas": [],
+  "hospitals": []
+}
