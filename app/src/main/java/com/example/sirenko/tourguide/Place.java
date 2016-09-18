@@ -53,8 +53,9 @@ public class Place {
             @NotNull String address,
             @NotNull String website,
             @NotNull String phone,
-            @NotNull String emergencyPhone) {
-        return new Place(name, description, workingHours, -1, -1, address, website, phone, emergencyPhone);
+            @NotNull String emergencyPhone,
+            int imageResourceId) {
+        return new Place(name, description, workingHours, -1, imageResourceId, address, website, phone, emergencyPhone);
     }
 
     private Place(
