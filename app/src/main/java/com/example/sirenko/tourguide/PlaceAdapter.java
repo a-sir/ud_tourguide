@@ -26,15 +26,15 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         ((TextView) itemView.findViewById(R.id.tv_place_name)).setText(place.name);
         ((TextView) itemView.findViewById(R.id.tv_place_description)).setText(place.description);
-        ((TextView) itemView.findViewById(R.id.tv_place_working_hours)).setText(place.workingHours);
+        ((TextView) itemView.findViewById(R.id.tv_place_working_hours)).setText("Working hours: " + place.workingHours);
         if (place.averageBillDollars != -1) {
-            ((TextView) itemView.findViewById(R.id.tv_place_average_bill_dollars)).setText(String.valueOf(place.averageBillDollars));
+            ((TextView) itemView.findViewById(R.id.tv_place_average_bill_dollars)).setText("Average bill: $" + String.valueOf(place.averageBillDollars));
         }
-        ((TextView) itemView.findViewById(R.id.tv_place_address)).setText(place.address);
-        ((TextView) itemView.findViewById(R.id.tv_place_website)).setText(place.website);
-        ((TextView) itemView.findViewById(R.id.tv_place_phone)).setText(place.phone);
+        ((TextView) itemView.findViewById(R.id.tv_place_address)).setText("Address: " + place.address);
+        ((TextView) itemView.findViewById(R.id.tv_place_website)).setText("www: " + place.website);
+        ((TextView) itemView.findViewById(R.id.tv_place_phone)).setText("Phone: " + place.phone);
         if (place.emergencyPhone != null) {
-            ((TextView) itemView.findViewById(R.id.tv_place_emergency_phone)).setText(place.emergencyPhone);
+            ((TextView) itemView.findViewById(R.id.tv_place_emergency_phone)).setText("Emergency: " + place.emergencyPhone);
         }
 
         ImageView image = (ImageView) itemView.findViewById(R.id.iv_place_image);

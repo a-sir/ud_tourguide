@@ -19,11 +19,16 @@
     android:layout_width="match_parent"
     android:orientation="vertical">
     <TextView
-        style="@style/place_attribute"
+        style="@style/place_header"
         android:id="@+id/tv_place_name"/>
     <TextView
-        style="@style/place_attribute"
+        style="@style/place_header"
         android:id="@+id/tv_place_description"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_place_image"/>
     <TextView
         style="@style/place_attribute"
         android:id="@+id/tv_place_working_hours"/>
@@ -42,9 +47,4 @@
     <TextView
         style="@style/place_attribute"
         android:id="@+id/tv_place_emergency_phone"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:id="@+id/iv_place_image"/>
 </LinearLayout>
