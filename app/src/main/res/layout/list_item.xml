@@ -47,4 +47,7 @@
     <TextView
         style="@style/place_attribute"
         android:id="@+id/tv_place_emergency_phone"/>
+    <TextView
+        style="@style/place_attribute"
+        android:text=""/>
 </LinearLayout>
