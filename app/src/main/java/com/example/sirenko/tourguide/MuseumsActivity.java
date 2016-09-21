@@ -40,10 +40,6 @@ public class MuseumsActivity extends AppCompatActivity {
         } catch (JSONException | IOException e) {
             throw new RuntimeException(e);
         }
-        //places.add(Place.museum("Ethnographic museum", "Old pictures and houses", "Every day 9-22", "Hanoi, Giang Vo, 161", "www.singapore-food-hanoi.com.vn", "+848762378675"));
-        //places.add(Place.museum("Army museum", "Tanks and airplanes", "Every day 9-22", "Hanoi, Giang Vo, 161", "www.singapore-food-hanoi.com.vn", "+848762378675"));
-        //places.add(Place.museum("Internet museum", "About pokemons and coccoc", "Every day 9-22", "Hanoi, Giang Vo, 161", "www.singapore-food-hanoi.com.vn", "+848762378675"));
-        //places.add(Place.museum("Boring museum", "History of history", "Every day 9-22", "Hanoi, Giang Vo, 161", "www.singapore-food-hanoi.com.vn", "+848762378675"));
         PlaceAdapter adapter = new PlaceAdapter(this, places);
         ListView layout = (ListView) findViewById(R.id.places_list_id);
         assert layout != null;

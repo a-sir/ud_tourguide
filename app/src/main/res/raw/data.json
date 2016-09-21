@@ -8,6 +8,30 @@
       "address": "Hanoi, Giang Vo, 161",
       "website": "www.singapore-food-hanoi.com.vn",
       "phone": "+848762378675"
+    },
+    {
+      "name": "Army museum",
+      "description": "Tanks and airplanes",
+      "workingHours": "Every day 9-22",
+      "address": "Hanoi, Giang Vo, 161",
+      "website": "www.singapore-food-hanoi.com.vn",
+      "phone": "+848762378675"
+    },
+    {
+      "name": "Internet museum",
+      "description": "About pokemons and coccoc",
+      "workingHours": "Every day 9-22",
+      "address": "Hanoi, Giang Vo, 161",
+      "website": "www.singapore-food-hanoi.com.vn",
+      "phone": "+848762378675"
+    },
+    {
+      "name": "Boring museum",
+      "description": "History of history",
+      "workingHours": "Every day 9-22",
+      "address": "Hanoi, Giang Vo, 161",
+      "website": "www.singapore-food-hanoi.com.vn",
+      "phone": "+848762378675"
     }
   ],
   "cinemas": [],
