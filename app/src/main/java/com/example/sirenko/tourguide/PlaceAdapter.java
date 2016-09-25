@@ -25,7 +25,15 @@ class PlaceAdapter extends ArrayAdapter<Place> {
         Place place = getItem(position);
 
         ((TextView) itemView.findViewById(R.id.tv_place_name)).setText(place.name);
-        ((TextView) itemView.findViewById(R.id.tv_place_description)).setText(place.description);
+
+        TextView desc = (TextView) itemView.findViewById(R.id.tv_place_description);
+        if (place.description != null && !place.description.isEmpty()) {
+            desc.setText(place.description);
+            desc.setVisibility(View.VISIBLE);
+        } else {
+            desc.setVisibility(View.GONE);
+        }
+
         ((TextView) itemView.findViewById(R.id.tv_place_working_hours)).setText("Working hours: " + place.workingHours);
 
         TextView bill = (TextView) itemView.findViewById(R.id.tv_place_average_bill_dollars);

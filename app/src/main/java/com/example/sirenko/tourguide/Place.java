@@ -6,7 +6,7 @@ import org.jetbrains.annotations.Nullable;
 public class Place {
 
     public final @NotNull String name;
-    public final @NotNull String description;
+    public final @Nullable String description;
     public final @NotNull String workingHours;
     public final int averageBillVND;
     public final int imageResourceId;
@@ -28,12 +28,11 @@ public class Place {
 
     public static Place museum(
             @NotNull String name,
-            @NotNull String description,
             @NotNull String workingHours,
             @NotNull String address,
             @NotNull String website,
             @NotNull String phone) {
-        return new Place(name, description, workingHours, -1, -1, address, website, phone, null);
+        return new Place(name, null, workingHours, -1, -1, address, website, phone, null);
     }
 
     public static Place cinema(
@@ -60,7 +59,7 @@ public class Place {
 
     private Place(
             @NotNull String name,
-            @NotNull String description,
+            @Nullable String description,
             @NotNull String workingHours,
             int averageBillVND,
             int imageResourceId,

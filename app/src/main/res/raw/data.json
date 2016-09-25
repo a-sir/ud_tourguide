@@ -43,41 +43,49 @@
       "averageBillVND": "250000",
       "address": "B2- R4- Royal City- Thanh Xuan District_ Hanoi",
       "website": "http://www.gogi.com.vn/",
-      "phone": "46.2620039"
+      "phone": "462620039"
     }
   ],
   "museums": [
     {
-      "name": "Ethnographic museum",
-      "description": "Old pictures and houses",
-      "workingHours": "Every day 9-22",
-      "address": "Hanoi, Giang Vo, 161",
-      "website": "www.singapore-food-hanoi.com.vn",
-      "phone": "+848762378675"
+      "name": "Vietnam Museum of Ethnology",
+      "description": "Vietnam Museum of Ethnology",
+      "workingHours": "8.30am-5.30pm",
+      "address": "Nguyen Van Huyen St- Cau Giay Dist Hanoi",
+      "website": "http://www.vme.org.vn/",
+      "phone": "437562192"
     },
     {
-      "name": "Army museum",
-      "description": "Tanks and airplanes",
-      "workingHours": "Every day 9-22",
-      "address": "Hanoi, Giang Vo, 161",
-      "website": "www.singapore-food-hanoi.com.vn",
-      "phone": "+848762378675"
+      "name": "Hanoi Museum",
+      "description": "Hanoi Museum",
+      "workingHours": "8am-5pm",
+      "address": "Pham Hung road Tu Liem District Hanoi",
+      "website": "http://baotanghanoi.com.vn/",
+      "phone": "462870604"
     },
     {
-      "name": "Internet museum",
-      "description": "About pokemons and coccoc",
-      "workingHours": "Every day 9-22",
-      "address": "Hanoi, Giang Vo, 161",
-      "website": "www.singapore-food-hanoi.com.vn",
-      "phone": "+848762378675"
+      "name": "Vietnam National Museum of history",
+      "description": "Vietnam National Museum of history",
+      "workingHours": "8am-5pm",
+      "address": "Number 1 Trang Tien Street, Hoan Kiem District, Hanoi",
+      "website": "http://baotanglichsu.vn/portal/vi/Trang-chu/mid/29453A92/",
+      "phone": "438341384"
     },
     {
-      "name": "Boring museum",
-      "description": "History of history",
-      "workingHours": "Every day 9-22",
-      "address": "Hanoi, Giang Vo, 161",
-      "website": "www.singapore-food-hanoi.com.vn",
-      "phone": "+848762378675"
+      "name": "Ho CHi Minh Museum",
+      "description": "Ho CHi Minh Museum",
+      "workingHours": "8am-4.30pm",
+      "address": "19 Ngoc Ha st. Ba Dinh District, Hanoi",
+      "website": "http://www.baotanghochiminh.vn/",
+      "phone": "438455435"
+    },
+    {
+      "name": "Arts Museum",
+      "description": "Arts Museum",
+      "workingHours": "8.30am-5pm",
+      "address": "66 Nguyen Thai Hoc, Ba Dinh District",
+      "website": "http://www.vnfam.vn/",
+      "phone": "43733213"
     }
   ],
   "cinemas": [],

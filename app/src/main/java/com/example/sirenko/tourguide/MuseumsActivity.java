@@ -23,7 +23,6 @@ public class MuseumsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.place_list);
         List<Place> places = new ArrayList<>();
-
         try {
             JSONObject root = new JSONObject(ResourceUtils.read(getResources().openRawResource(R.raw.data)));
             JSONArray museums = root.getJSONArray("museums");
@@ -31,7 +30,6 @@ public class MuseumsActivity extends AppCompatActivity {
                 JSONObject m = museums.getJSONObject(i);
                 places.add(Place.museum(
                         m.getString("name"),
-                        m.getString("description"),
                         m.getString("workingHours"),
                         m.getString("address"),
                         m.getString("website"),
@@ -40,6 +38,7 @@ public class MuseumsActivity extends AppCompatActivity {
         } catch (JSONException | IOException e) {
             throw new RuntimeException(e);
         }
+
         PlaceAdapter adapter = new PlaceAdapter(this, places);
         ListView layout = (ListView) findViewById(R.id.places_list_id);
         assert layout != null;
