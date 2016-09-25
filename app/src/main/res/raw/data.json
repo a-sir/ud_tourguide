@@ -125,5 +125,51 @@
       "phone": "0438343459"
     }
   ],
-  "hospitals": []
+  "hospitals": [
+    {
+      "name": "Vinmec",
+      "description": "General hospital",
+      "workingHours": "8.30am-7.30pm",
+      "address": "1st floor, R2 building, Royal City, Hanoi",
+      "website": "http://vinmec.com/pk-vinmec-royal-city-c167.html",
+      "phone": "0466646868",
+      "emergencyPhone": "04 66646868"
+    },
+    {
+      "name": "Hong Ngoc",
+      "description": "General hospital",
+      "workingHours": "8am-8pm",
+      "address": "55 yen Ninh St., Truc Bach, Ba Dinh District, Hanoi",
+      "website": "https://hongngochospital.vn/",
+      "phone": "0439275568",
+      "emergencyPhone": "0439275568"
+    },
+    {
+      "name": "Hanoi obstetrics and gynecology hospital",
+      "description": "Obstetrics and gynecology hospital",
+      "workingHours": "7.30am-5.30pm",
+      "address": "De La Thanh, Ngoc Khanh, Ba Dinh district, Hanoi",
+      "website": "http://www.benhvienphusanhanoi.vn/",
+      "phone": "0438343181",
+      "emergencyPhone": "0438343181"
+    },
+    {
+      "name": "Vietnam National Hospital of Pediatrics",
+      "description": "Pediatric hospital",
+      "workingHours": "7.30am-5.30pm",
+      "address": "18/879 De La Thanh, Ngoc Khanh, Ba Dinh District, Hanoi",
+      "website": "http://nhp.org.vn/",
+      "phone": "0462738573",
+      "emergencyPhone": "0462738573"
+    },
+    {
+      "name": "L'Hôpital Français de Hanoi",
+      "description": "General hospital",
+      "workingHours": "8.30am-7.30pm",
+      "address": "Number 1 Phuong Mai St., Dong Da District., Hanoi",
+      "website": "http://m.hfh.com.vn/",
+      "phone": "0435771100",
+      "emergencyPhone": "0435741111"
+    }
+  ]
 }
