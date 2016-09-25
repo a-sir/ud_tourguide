@@ -37,16 +37,19 @@
         android:id="@+id/tv_place_average_bill_dollars"/>
     <TextView
         style="@style/place_attribute"
-        android:id="@+id/tv_place_address"/>
+        android:id="@+id/tv_place_address" />
     <TextView
         style="@style/place_attribute"
-        android:id="@+id/tv_place_website"/>
+        android:id="@+id/tv_place_website"
+        android:autoLink="web" />
     <TextView
         style="@style/place_attribute"
-        android:id="@+id/tv_place_phone"/>
+        android:id="@+id/tv_place_phone"
+        android:autoLink="phone" />
     <TextView
         style="@style/place_attribute"
-        android:id="@+id/tv_place_emergency_phone"/>
+        android:id="@+id/tv_place_emergency_phone"
+        android:autoLink="phone" />
     <TextView
         style="@style/place_attribute"
         android:text=""/>
