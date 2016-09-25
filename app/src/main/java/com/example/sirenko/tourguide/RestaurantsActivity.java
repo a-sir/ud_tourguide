@@ -22,9 +22,9 @@ public class RestaurantsActivity extends AppCompatActivity {
         List<Place> places = new ArrayList<>();
         try {
             JSONObject root = new JSONObject(ResourceUtils.read(getResources().openRawResource(R.raw.data)));
-            JSONArray museums = root.getJSONArray("restaurants");
-            for (int i = 0 ; i < museums.length(); ++i) {
-                JSONObject m = museums.getJSONObject(i);
+            JSONArray array = root.getJSONArray("restaurants");
+            for (int i = 0 ; i < array.length(); ++i) {
+                JSONObject m = array.getJSONObject(i);
                 places.add(Place.restaurant(
                         m.getString("name"),
                         m.getString("description"),

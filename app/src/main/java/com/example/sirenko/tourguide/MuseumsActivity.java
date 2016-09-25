@@ -25,9 +25,9 @@ public class MuseumsActivity extends AppCompatActivity {
         List<Place> places = new ArrayList<>();
         try {
             JSONObject root = new JSONObject(ResourceUtils.read(getResources().openRawResource(R.raw.data)));
-            JSONArray museums = root.getJSONArray("museums");
-            for (int i = 0 ; i < museums.length(); ++i) {
-                JSONObject m = museums.getJSONObject(i);
+            JSONArray array = root.getJSONArray("museums");
+            for (int i = 0 ; i < array.length(); ++i) {
+                JSONObject m = array.getJSONObject(i);
                 places.add(Place.museum(
                         m.getString("name"),
                         m.getString("workingHours"),
