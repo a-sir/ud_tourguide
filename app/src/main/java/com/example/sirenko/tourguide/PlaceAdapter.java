@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class PlaceAdapter extends ArrayAdapter<Place> {
+class PlaceAdapter extends ArrayAdapter<Place> {
 
-    public PlaceAdapter(Context context, List<Place> objects) {
+    PlaceAdapter(Context context, List<Place> objects) {
         super(context, 0, objects);
     }
 
@@ -29,8 +29,8 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         ((TextView) itemView.findViewById(R.id.tv_place_working_hours)).setText("Working hours: " + place.workingHours);
 
         TextView bill = (TextView) itemView.findViewById(R.id.tv_place_average_bill_dollars);
-        if (place.averageBillDollars != -1) {
-            bill.setText("Average bill: $" + String.valueOf(place.averageBillDollars));
+        if (place.averageBillVND != -1) {
+            bill.setText("Average bill: $" + String.valueOf(place.averageBillVND));
             bill.setVisibility(View.VISIBLE);
         } else {
             bill.setVisibility(View.GONE);

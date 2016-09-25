@@ -1,5 +1,51 @@
 {
-  "restaurants": [],
+  "restaurants": [
+    {
+      "name": "Pizza Hut",
+      "description": "Food",
+      "workingHours": "10am-10pm",
+      "averageBillVND": "200000",
+      "address": "B2- Royal City - Nguyen Trai St. - Thanh Xuan District - Hanoi",
+      "website": "https://order.pizzahut.vn/vi/order",
+      "phone": "19001822"
+    },
+    {
+      "name": "Sen Tay Ho",
+      "description": "buffet",
+      "workingHours": "11am-9.30pm",
+      "averageBillVND": "300000",
+      "address": "614 Lac Long Quan road - Tay Ho district - Hanoi",
+      "website": "http://sentayho.com.vn/",
+      "phone": "0437199242"
+    },
+    {
+      "name": "BB Home Cook",
+      "description": "food and drinks",
+      "workingHours": "8am-10pm",
+      "averageBillVND": "100000",
+      "address": "109K1 Giang Vo - Dong Da district- Hanoi",
+      "website": "https://www.facebook.com/BBfamilyrestaurant/",
+      "phone": "972143883"
+    },
+    {
+      "name": "Moo Beef Steak",
+      "description": "beef steaks",
+      "workingHours": "10am-10pm",
+      "averageBillVND": "500000",
+      "address": "59A Tran Quoc Toan st. - Hoan Kiem District - Hanoi",
+      "website": "http://moobeefsteak.com.vn/thuc-don",
+      "phone": "439413786"
+    },
+    {
+      "name": "GoGi House",
+      "description": "Grill and Hot pot",
+      "workingHours": "10am-10pm",
+      "averageBillVND": "250000",
+      "address": "B2- R4- Royal City- Thanh Xuan District_ Hanoi",
+      "website": "http://www.gogi.com.vn/",
+      "phone": "46.2620039"
+    }
+  ],
   "museums": [
     {
       "name": "Ethnographic museum",

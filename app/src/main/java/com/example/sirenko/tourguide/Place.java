@@ -8,7 +8,7 @@ public class Place {
     public final @NotNull String name;
     public final @NotNull String description;
     public final @NotNull String workingHours;
-    public final int averageBillDollars;
+    public final int averageBillVND;
     public final int imageResourceId;
     public final @NotNull String address;
     public final @NotNull String website;
@@ -19,11 +19,11 @@ public class Place {
             @NotNull String name,
             @NotNull String description,
             @NotNull String workingHours,
-            int averageBillDollars,
+            int averageBillVND,
             @NotNull String address,
             @NotNull String website,
             @NotNull String phone) {
-        return new Place(name, description, workingHours, averageBillDollars, -1, address, website, phone, null);
+        return new Place(name, description, workingHours, averageBillVND, -1, address, website, phone, null);
     }
 
     public static Place museum(
@@ -62,7 +62,7 @@ public class Place {
             @NotNull String name,
             @NotNull String description,
             @NotNull String workingHours,
-            int averageBillDollars,
+            int averageBillVND,
             int imageResourceId,
             @NotNull String address,
             @NotNull String website,
@@ -71,7 +71,7 @@ public class Place {
         this.name = name;
         this.description = description;
         this.workingHours = workingHours;
-        this.averageBillDollars = averageBillDollars;
+        this.averageBillVND = averageBillVND;
         this.imageResourceId = imageResourceId;
         this.address = address;
         this.website = website;
