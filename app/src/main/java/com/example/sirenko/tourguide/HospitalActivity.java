@@ -10,7 +10,9 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class HospitalActivity extends AppCompatActivity {
 
@@ -19,21 +21,25 @@ public class HospitalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.place_list);
         List<Place> places = new ArrayList<>();
+        Map<String, Integer> imageIDs = new HashMap<>();
+        imageIDs.put("L'Hôpital Français de Hanoi", R.drawable.hospital_french);
 
         try {
             JSONObject root = new JSONObject(ResourceUtils.read(getResources().openRawResource(R.raw.data)));
             JSONArray museums = root.getJSONArray("hospitals");
+
             for (int i = 0 ; i < museums.length(); ++i) {
                 JSONObject m = museums.getJSONObject(i);
+                String name = m.getString("name");
                 places.add(Place.hospital(
-                        m.getString("name"),
+                        name,
                         m.getString("description"),
                         m.getString("workingHours"),
                         m.getString("address"),
                         m.getString("website"),
                         m.getString("phone"),
                         m.getString("emergencyPhone"),
-                        -1));
+                        imageIDs.containsKey(name) ? imageIDs.get(name) : -1));
             }
         } catch (JSONException | IOException e) {
             throw new RuntimeException(e);
