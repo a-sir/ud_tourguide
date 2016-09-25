@@ -37,12 +37,11 @@ public class Place {
 
     public static Place cinema(
             @NotNull String name,
-            @NotNull String description,
             @NotNull String workingHours,
             @NotNull String address,
             @NotNull String website,
             @NotNull String phone) {
-        return new Place(name, description, workingHours, -1, -1, address, website, phone, null);
+        return new Place(name, null, workingHours, -1, -1, address, website, phone, null);
     }
 
     public static Place hospital(

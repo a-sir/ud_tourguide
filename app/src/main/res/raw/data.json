@@ -88,6 +88,42 @@
       "phone": "43733213"
     }
   ],
-  "cinemas": [],
+  "cinemas": [
+    {
+      "name": "Platinum Cineplex",
+      "workingHours": "9.30am-12pm",
+      "address": "B2 Royal City",
+      "website": "https://platinumcineplex.vn/vi/cinema/royal-city/?itemId=18",
+      "phone": "0462694444"
+    },
+    {
+      "name": "CGV Mipec Tower",
+      "workingHours": "8.30am-3am",
+      "address": "229 Tay Son St., Dong Da district, Hanoi",
+      "website": "https://www.cgv.vn/vn/theaters/cinema/index/city/hanoi/name/cgv-mipec-tower",
+      "phone": "0438123000"
+    },
+    {
+      "name": "NCC",
+      "workingHours": "8am-1am",
+      "address": "87 Lang Ha St., Dong Da, Hanoi",
+      "website": "https://chieuphimquocgia.com.vn/",
+      "phone": "043514179"
+    },
+    {
+      "name": "August Cinema",
+      "workingHours": "9am-12pm",
+      "address": "45 Hang Bai st., Hoan Kiem District, Hanoi",
+      "website": "http://rapthang8.com/",
+      "phone": "0438253911"
+    },
+    {
+      "name": "Ngoc Khanh Cinema",
+      "workingHours": "9am-12pm",
+      "address": "523 Kim Ma road, Ba Dinh District, Hanoi",
+      "website": "http://phimchieurap.vn/rap/ngoc-khanh-cinema/",
+      "phone": "0438343459"
+    }
+  ],
   "hospitals": []
 }
